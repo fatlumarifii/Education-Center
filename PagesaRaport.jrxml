@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.3.1.final using JasperReports Library version 6.3.1  -->
+<!-- 2017-06-01T09:51:36 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_1" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="8d840ec9-cf03-497d-81df-e6998c12ad71">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="EducationCenterDB"/>
+	<queryString language="SQL">
+		<![CDATA[Select * from Pagesa]]>
+	</queryString>
+	<field name="PagesaID" class="java.lang.Integer"/>
+	<field name="StudentiID" class="java.lang.Integer"/>
+	<field name="ShumaEPaguar" class="java.lang.Double"/>
+	<field name="FaturaID" class="java.lang.Integer"/>
+	<group name="PagesaID">
+		<groupExpression><![CDATA[$F{PagesaID}]]></groupExpression>
+	</group>
+	<group name="StudentiID">
+		<groupExpression><![CDATA[$F{StudentiID}]]></groupExpression>
+	</group>
+	<group name="ShumaEPaguar">
+		<groupExpression><![CDATA[$F{ShumaEPaguar}]]></groupExpression>
+	</group>
+	<group name="FaturaID">
+		<groupExpression><![CDATA[$F{FaturaID}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch"/>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="100" height="30" uuid="2788ef01-c721-4c66-af01-2c7dbbd09a9c"/>
+				<text><![CDATA[PagesaID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="110" y="0" width="100" height="30" uuid="d3ad05f1-5c11-4767-8bf3-9dc5fa67148d"/>
+				<text><![CDATA[StudentiID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="220" y="0" width="100" height="30" uuid="760b0b66-1bba-4e61-b73c-8be155786de3"/>
+				<text><![CDATA[ShumaEPaguar]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="330" y="0" width="100" height="30" uuid="4db16c46-b15c-4888-ad7e-5ab707d961a6"/>
+				<text><![CDATA[FaturaID]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="23" width="100" height="30" uuid="a519ba11-c883-407a-a1ce-c8ff213d4010"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[$F{PagesaID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="110" y="23" width="100" height="30" uuid="b8868597-2090-445f-a14e-471c7becabe7"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[$F{StudentiID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="220" y="23" width="100" height="30" uuid="eb4d589a-57d7-410a-b040-8e236a413ee5"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[$F{ShumaEPaguar}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="330" y="23" width="100" height="30" uuid="c14320cc-e76b-4d1c-833c-0e2e8fbfbec1"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[$F{FaturaID}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>
