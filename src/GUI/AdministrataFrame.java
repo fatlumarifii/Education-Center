@@ -217,6 +217,7 @@ public class AdministrataFrame extends javax.swing.JInternalFrame {
         telgabimlb = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         QytetiChooser = new javax.swing.JComboBox<>();
+        dobtxt = new com.toedter.calendar.JDateChooser();
         GjiniaChooser = new javax.swing.JComboBox<>();
         RadioAktiv = new javax.swing.JRadioButton();
         kombesiatxt = new javax.swing.JTextField();
@@ -242,7 +243,6 @@ public class AdministrataFrame extends javax.swing.JInternalFrame {
         nrPersonaltxt = new javax.swing.JTextField();
         filtrotxt = new javax.swing.JTextField();
         jLabel14 = new javax.swing.JLabel();
-        dobtxt = new com.toedter.calendar.JDateChooser();
         saveBtn = new javax.swing.JButton();
         anulobtn = new javax.swing.JButton();
         jScrollPane1 = new javax.swing.JScrollPane();
@@ -284,6 +284,7 @@ public class AdministrataFrame extends javax.swing.JInternalFrame {
             }
         });
         jPanel1.add(QytetiChooser, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 50, 100, 30));
+        jPanel1.add(dobtxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 10, 131, 30));
 
         jPanel1.add(GjiniaChooser, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 10, 100, 30));
 
@@ -421,7 +422,6 @@ public class AdministrataFrame extends javax.swing.JInternalFrame {
 
         jLabel14.setText("Filtro: ");
         jPanel1.add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 90, 80, 30));
-        jPanel1.add(dobtxt, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 10, 130, -1));
 
         saveBtn.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         saveBtn.setIcon(new javax.swing.ImageIcon(getClass().getResource("/GUI/Images/save.png"))); // NOI18N
